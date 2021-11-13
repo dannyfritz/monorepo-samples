@@ -2,19 +2,20 @@
 
 This repo is created to demonstrate various TypeScript monorepo structures.
 
-## Configurations
+## Demonstrations
 
-You can see each demonstration on these respective branches:
-* `rush`
+You can see each demonstration on these respective git branches:
 * `lerna`
 * `pnpm`
 * `pnpm + lage`
 * `pnpm + ultra-runner`
+* `rush`
 
-## Monorepo Requirements
+## Requirements
 
 ### Dependency Structure
 
+* web-application <- button
 * web-application <- shared-types
 * web-application <- math-utils
 * web-application <- service-client
@@ -37,21 +38,33 @@ You can see each demonstration on these respective branches:
 
 #### web-application
 
-* "build" - Support bundling for browser
+* "build" - Bundle for the browser
 * "build:watch" - Support a development server
 * "deploy" - Run a script that sleeps for 10s
-* Use a web ESLint profile
-* Use a web TypeScript profile
+* ESLint profile: Web
+* TypeScript profile: Web
+
+#### button
+
+* "build" - Bundle for the browser
+* ESLint profile: Web
+* TypeScript profile: Web
+
+#### math-utils
+
+* "build" - Bundle for Node
+* ESLint profile: Node
+* TypeScript profile: Node
 
 #### service-client
 
-* "build" - Support bundling for node
-* Use a Node ESLint profile
-* Use a Node TypeScript profile
+* "build" - Bundle for node
+* ESLint profile: Node
+* TypeScript profile: Node
 
 #### service
 
 * "build" - Support bundling for node
 * "deploy" - Run a script that sleeps for 10s
-* Use a Node ESLint profile
-* Use a Node TypeScript profile
+* ESLint profile: Node
+* TypeScript profile: Node
