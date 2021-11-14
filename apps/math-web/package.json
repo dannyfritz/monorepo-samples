@@ -5,10 +5,11 @@
 	"source": "./src/index.html",
 	"scripts": {
 		"build": "parcel build",
-		"start": "parcel",
+		"clean": "rm -rf dist",
 		"deploy": "deploy-service",
-		"static-check": "tsc --noEmit",
-		"lint": "eslint . --color"
+		"lint": "eslint . --color",
+		"start": "parcel",
+		"static-check": "tsc --noEmit"
 	},
 	"dependencies": {
 		"button": "*",

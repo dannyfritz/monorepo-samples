@@ -8,8 +8,10 @@
 	"scripts": {
 		"build": "parcel build",
 		"build:watch": "parcel watch",
+		"clean": "rm -rf dist",
 		"deploy": "deploy-service",
-		"lint": "eslint . --color"
+		"lint": "eslint . --color",
+		"static-check": "tsc --noEmit"
 	},
 	"dependencies": {
 		"math-util": "*"

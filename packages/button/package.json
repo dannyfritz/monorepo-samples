@@ -7,7 +7,9 @@
 	"types": "dist/types.d.ts",
 	"scripts": {
 		"build": "parcel build",
-		"build:watch": "parcel watch"
+		"build:watch": "parcel watch",
+		"clean": "rm -rf dist",
+		"static-check": "tsc --noEmit"
 	},
 	"dependencies": {
 		"react": "^16.0.0"

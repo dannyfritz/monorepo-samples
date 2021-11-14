@@ -10,6 +10,7 @@
 	"scripts": {
 		"build": "parcel build",
 		"build:watch": "parcel watch",
+		"clean": "rm -rf dist",
 		"lint": "eslint . --color"
 	},
 	"dependencies": {

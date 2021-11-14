@@ -15,6 +15,8 @@ This repo is created to demonstrate a [Lerna](https://lerna.js.org/) monorepo st
 
 `lerna run build`
 
+`lerna run clean`
+
 `lerna run lint`
 
 `lerna run static-check`
