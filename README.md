@@ -23,19 +23,19 @@ This repo is created to demonstrate a [Lerna](https://lerna.js.org/) monorepo st
 
 `lerna run unit-test`
 
-### Run web-application
+### Run math-web
 
-`lerna run build --scope web-application --include-dependencies`
+`lerna run build --scope math-web --include-dependencies`
 
-`lerna run start --scope web-application --stream`
+`lerna run start --scope math-web --stream`
 
-### Deploy web-application
+### Deploy math-web
 
-`lerna run build --scope web-application --include-dependencies`
+`lerna run build --scope math-web --include-dependencies`
 
-`lerna run deploy --scope web-application --stream`
+`lerna run deploy --scope math-web --stream`
 
-## Deploy math-service
+### Deploy math-service
 
 `lerna run build --scope math-service --include-dependencies`
 
