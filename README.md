@@ -7,35 +7,36 @@ This repo is created to demonstrate a [pnpm](https://pnpm.io/) monorepo structur
 1. Install Node, npm, and npx. (All are installed with Node)
 2. Install pnpm. `npm install -g pnpm`
 3. `pnpm install`
+4. `pnpm install ultra-runner -g`
 
 ## Commands
 
 ### All Packages
 
-`pnpm run build -r`
+`ultra -r build`
 
-`pnpm run clean -r`
+`ultra -r clean`
 
-`pnpm run lint -r`
+`ultra -r lint`
 
-`pnpm run static-check -r`
+`ultra -r static-check`
 
-`pnpm run unit-test -r`
+`ultra -r unit-test`
 
 ### Run math-web
 
-`pnpm run build --filter math-web...`
+`ultra -r --filter "+apps/math-web" build`
 
-`pnpm run start --filter math-web --stream`
+`ultra -r --filter "apps/math-web" start`
 
 ### Deploy math-web
 
-`pnpm run build --filter math-web...`
+`ultra -r --filter "+apps/math-web" build`
 
-`pnpm run deploy --filter math-web --stream`
+`ultra -r --filter "apps/math-web" deploy`
 
 ### Deploy math-service
 
-`pnpm run build --filter math-service...`
+`ultra -r --filter "+services/math-service" build`
 
-`pnpm run deploy --filter math-service --stream`
+`ultra -r --filter math-service deploy`
