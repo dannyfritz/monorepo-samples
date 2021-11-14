@@ -1,13 +1,15 @@
 {
-	"name": "lerna-monorepo",
-	"private": true,
-	"scripts": {
-		"bootstrap": "pnpm install",
-		"preinstall": "npx only-allow pnpm"
-	},
-	"devDependencies": {
-		"@parcel/packager-ts": "^2.0.1",
-		"@parcel/transformer-typescript-types": "^2.0.1",
-		"pnpm": "^6.21.1"
-	}
+  "name": "lerna-monorepo",
+  "private": true,
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "preinstall": "npx only-allow pnpm",
+    "lage": "lage"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "pnpm": "^6.21.1",
+    "lage": "1.1.1"
+  }
 }
