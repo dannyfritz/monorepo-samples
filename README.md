@@ -13,19 +13,22 @@ You can see each demonstration on these respective git branches:
 
 ## Requirements
 
-### Dependency Structure
+### Package Structure
 
-* web-application <- button
-* web-application <- shared-types
-* web-application <- math-utils
-* web-application <- service-client
-* web-application <- shared-configs
-* service-client <- shared-types
-* service-client <- shared-configs
-* service <- shared-types
-* service <- math-utils
-* service <- shared-configs
-* shared-configs
+* @infra/deploy-service
+* @infra/deploy-web
+* @infra/*shared-configs*
+* apps/web-application <- @infra/deploy-web
+* apps/web-application <- @infra/*shared-configs*
+* apps/web-application <- button
+* apps/web-application <- service-client
+* packages/button <- @infra/*shared-configs*
+* packages/math-util <- @infra/*shared-configs*
+* packages/service-client <- @infra/*shared-configs*
+* packages/service-client <- service
+* services/math-service <- @infra/deploy-service
+* services/math-service <- @infra/*shared-configs*
+* services/math-service <- math-utils
 
 ### Package Requirements
 
@@ -34,9 +37,8 @@ You can see each demonstration on these respective git branches:
 * "test" - run Jest
 * "lint" - run ESLint
 * "static-analysis" - run TypeScript
-* Use a shared Jest profile
 
-#### web-application
+#### apps/web-application
 
 * "build" - Bundle for the browser
 * "build:watch" - Support a development server
@@ -44,25 +46,25 @@ You can see each demonstration on these respective git branches:
 * ESLint profile: Web
 * TypeScript profile: Web
 
-#### button
+#### packages/button
 
 * "build" - Bundle for the browser
 * ESLint profile: Web
 * TypeScript profile: Web
 
-#### math-utils
+#### packages/math-util
 
 * "build" - Bundle for Node
 * ESLint profile: Node
 * TypeScript profile: Node
 
-#### service-client
+#### packages/math-service-client
 
 * "build" - Bundle for node
 * ESLint profile: Node
 * TypeScript profile: Node
 
-#### service
+#### services/math-service
 
 * "build" - Support bundling for node
 * "deploy" - Run a script that sleeps for 10s
