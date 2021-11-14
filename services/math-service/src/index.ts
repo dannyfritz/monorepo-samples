@@ -7,7 +7,7 @@ type Response<D> =
 	}
 	| {
 		code: 500,
-		error?: string
+		error: string
 	}
 	;
 

@@ -9,7 +9,7 @@
 		"build": "parcel build",
 		"build:watch": "parcel watch",
 		"clean": "rm -rf dist",
-		"static-check": "tsc --noEmit"
+		"static-check": "tsc --noEmit --pretty"
 	},
 	"dependencies": {
 		"react": "^16.0.0"

@@ -11,7 +11,7 @@
 		"clean": "rm -rf dist",
 		"deploy": "deploy-service",
 		"lint": "eslint . --color",
-		"static-check": "tsc --noEmit"
+		"static-check": "tsc --noEmit --pretty"
 	},
 	"dependencies": {
 		"math-util": "*"

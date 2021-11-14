@@ -9,7 +9,7 @@
 		"deploy": "deploy-service",
 		"lint": "eslint . --color",
 		"start": "parcel",
-		"static-check": "tsc --noEmit"
+		"static-check": "tsc --noEmit --pretty"
 	},
 	"dependencies": {
 		"button": "*",

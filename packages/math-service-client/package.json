@@ -10,7 +10,7 @@
 		"build:watch": "parcel watch",
 		"clean": "rm -rf dist",
 		"lint": "eslint . --color",
-		"static-check": "tsc --noEmit"
+		"static-check": "tsc --noEmit --pretty"
 	},
 	"dependencies": {
 		"neverthrow": "^4.3.0"
