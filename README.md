@@ -8,9 +8,9 @@ All with similar structure and packages.
 You can see each demonstration on these respective git branches:
 * `lerna`
 * `pnpm`
-* `pnpm + lage`
-* `pnpm + ultra-runner`
-* `rush`
+* `pnpm-and-lage`
+* `pnpm-and-ultra-runner`
+* `rush` (TBA)
 
 ## Requirements
 
