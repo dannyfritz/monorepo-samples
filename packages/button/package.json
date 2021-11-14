@@ -9,7 +9,11 @@
 		"build": "parcel build",
 		"build:watch": "parcel watch"
 	},
+	"dependencies": {
+		"react": "^16.0.0"
+	},
 	"devDependencies": {
+		"@infra/ts-config-web": "*",
 		"parcel": "^2.0.1"
 	}
 }

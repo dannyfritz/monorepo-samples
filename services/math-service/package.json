@@ -15,10 +15,10 @@
 		"math-util": "*"
 	},
 	"devDependencies": {
-		"@infra/ts-config-node": "*",
-		"@infra/jest-config": "*",
+		"@infra/deploy-service": "*",
 		"@infra/eslint-config-node": "*",
-		"deploy-service": "*",
+		"@infra/jest-config": "*",
+		"@infra/ts-config-node": "*",
 		"eslint": "^8.2.0",
 		"parcel": "^2.0.1",
 		"typescript": "^4.4.4"

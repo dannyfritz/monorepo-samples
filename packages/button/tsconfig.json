@@ -1,0 +1,3 @@
+{
+	"extends": "@infra/ts-config-web/tsconfig.json"
+}

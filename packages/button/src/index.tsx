@@ -1,5 +1,11 @@
-export function Button({ text }) {
+import * as React from 'react';
+
+type ButtonProps = {
+	text: string,
+	onClick: (() => void) | (() => Promise<void>),
+}
+export function Button({ text, onClick }: ButtonProps) {
 	return (
-		<button>text</button>
+		<button onClick={onClick}>text</button>
 	);
 }

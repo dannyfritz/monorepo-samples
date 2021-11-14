@@ -5,8 +5,9 @@ This repo is created to demonstrate a [Lerna](https://lerna.js.org/) monorepo st
 ## Setup
 
 1. Install Node, npm, and npx. (All are installed with Node)
-2. Install Yarn. (Usually from npm)
-3. `yarn lerna bootstrap --strict` or `yarn bootstrap`
+2. Install Yarn. `npm install -g yarn`
+3. Install Lerna. `npm install -g lerna`
+3. `lerna bootstrap --strict`
 
 ## Commands
 
@@ -14,20 +15,20 @@ This repo is created to demonstrate a [Lerna](https://lerna.js.org/) monorepo st
 
 `lerna run build`
 `lerna run lint`
-`lerna run static-analysis`
+`lerna run static-check`
 `lerna run unit-test`
 
 ### Run web-application
 
 `lerna run build --scope web-application --include-dependencies`
-`lerna run start --scope web-application`
+`lerna run start --scope web-application --stream`
 
 ### Deploy web-application
 
 `lerna run build --scope web-application --include-dependencies`
-`lerna run deploy --scope web-application`
+`lerna run deploy --scope web-application --stream`
 
 ## Deploy math-service
 
 `yarn lerna run build --scope math-service --include-dependencies`
-`lerna run deploy --scope math-service`
+`lerna run deploy --scope math-service --stream`

@@ -1,0 +1,30 @@
+{
+	"name": "math-web",
+	"private": true,
+	"version": "1.0.0",
+	"source": "./src/index.html",
+	"scripts": {
+		"build": "parcel build",
+		"start": "parcel",
+		"deploy": "deploy-service",
+		"static-check": "tsc --noEmit",
+		"lint": "eslint . --color"
+	},
+	"dependencies": {
+		"button": "*",
+		"math-service-client": "*",
+		"react": "^16.0.0",
+		"react-dom": "^16.0.0"
+	},
+	"devDependencies": {
+		"@infra/deploy-web": "*",
+		"@infra/eslint-config-web": "*",
+		"@infra/jest-config": "*",
+		"@infra/ts-config-web": "*",
+		"@types/react": "^17.0.34",
+		"@types/react-dom": "^17.0.11",
+		"eslint": "^8.2.0",
+		"parcel": "^2.0.1",
+		"typescript": "^4.4.4"
+	}
+}
