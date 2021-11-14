@@ -1,6 +1,7 @@
 # monorepo-samples
 
-This repo is created to demonstrate various TypeScript monorepo structures.
+This repo demonstrates various TypeScript monorepo structures.
+All with similar structure and packages.
 
 ## Demonstrations
 
@@ -25,24 +26,26 @@ You can see each demonstration on these respective git branches:
 * packages/button <- @infra/*shared-configs*
 * packages/math-util <- @infra/*shared-configs*
 * packages/service-client <- @infra/*shared-configs*
-* packages/service-client <- service
+* packages/service-client <- math-service (only for types)
 * services/math-service <- @infra/deploy-service
 * services/math-service <- @infra/*shared-configs*
 * services/math-service <- math-utils
 
-### Package Requirements
+### Package Script Requirements
 
 #### All Packages
 
-* "unit-test" - run Jest
+* "clean" - remove dist
 * "lint" - run ESLint
-* "static-analysis" - run TypeScript
+* "static-check" - run TypeScript
+* "unit-test" - run Jest
+* Jest Config
 
 #### apps/web-application
 
 * "build" - Bundle for the browser
-* "build:watch" - Support a development server
 * "deploy" - Run a script that sleeps for 10s
+* "start" - Start a development server
 * ESLint profile: Web
 * TypeScript profile: Web
 
@@ -52,21 +55,21 @@ You can see each demonstration on these respective git branches:
 * ESLint profile: Web
 * TypeScript profile: Web
 
-#### packages/math-util
-
-* "build" - Bundle for Node
-* ESLint profile: Node
-* TypeScript profile: Node
-
 #### packages/math-service-client
 
 * "build" - Bundle for node
 * ESLint profile: Node
 * TypeScript profile: Node
 
+#### packages/math-util
+
+* "build" - Bundle for Node
+* ESLint profile: Node
+* TypeScript profile: Node
+
 #### services/math-service
 
-* "build" - Support bundling for node
+* "build" - Bundle for node
 * "deploy" - Run a script that sleeps for 10s
 * ESLint profile: Node
 * TypeScript profile: Node
