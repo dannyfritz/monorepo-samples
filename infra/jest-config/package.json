@@ -3,7 +3,8 @@
 	"private": true,
 	"version": "1.0.0",
 	"dependencies": {
-		"@infra/babel-preset-base": "*",
+		"@babel/core": "^7.16.0",
+		"@infra/babel-preset-base": "workspace:^",
 		"@types/jest": "^27.0.2",
 		"babel-jest": "^27.3.1"
 	},

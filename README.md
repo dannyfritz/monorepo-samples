@@ -1,42 +1,41 @@
-# Lerna
+# pnpm
 
-This repo is created to demonstrate a [Lerna](https://lerna.js.org/) monorepo structure.
+This repo is created to demonstrate a [pnpm](https://pnpm.io/) monorepo structure.
 
 ## Setup
 
 1. Install Node, npm, and npx. (All are installed with Node)
-2. Install Yarn. `npm install -g yarn`
-3. Install Lerna. `npm install -g lerna`
-3. `lerna bootstrap --strict`
+2. Install pnpm. `npm install -g pnpm`
+3. `pnpm install`
 
 ## Commands
 
 ### All Packages
 
-`lerna run build`
+`pnpm run build -r`
 
-`lerna run clean`
+`pnpm run clean -r`
 
-`lerna run lint`
+`pnpm run lint -r`
 
-`lerna run static-check`
+`pnpm run static-check -r`
 
-`lerna run unit-test`
+`pnpm run unit-test -r`
 
-### Run web-application
+### Run math-web
 
-`lerna run build --scope web-application --include-dependencies`
+`pnpm run build --filter math-web...`
 
-`lerna run start --scope web-application --stream`
+`pnpm run start --filter math-web --stream`
 
-### Deploy web-application
+### Deploy math-web
 
-`lerna run build --scope web-application --include-dependencies`
+`pnpm run build --filter math-web...`
 
-`lerna run deploy --scope web-application --stream`
+`pnpm run deploy --filter math-web --stream`
 
 ## Deploy math-service
 
-`lerna run build --scope math-service --include-dependencies`
+`pnpm run build --filter math-service...`
 
-`lerna run deploy --scope math-service --stream`
+`pnpm run deploy --filter math-service --stream`

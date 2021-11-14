@@ -3,7 +3,8 @@
 	"private": true,
 	"version": "1.0.0",
 	"dependencies": {
-		"@infra/eslint-config-base": "*",
+		"@infra/eslint-config-base": "workspace:^",
+		"eslint": "^8.2.0",
 		"eslint-plugin-node": "^11.1.0"
 	}
 }

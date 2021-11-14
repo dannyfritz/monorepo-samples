@@ -12,9 +12,11 @@
 		"unit-test": "jest --color"
 	},
 	"devDependencies": {
-		"@infra/eslint-config-node": "*",
-		"@infra/jest-config": "*",
-		"@infra/ts-config-node": "*",
+		"@babel/core": "^7.12.0",
+		"@infra/babel-preset-base": "workspace:^",
+		"@infra/eslint-config-node": "workspace:^",
+		"@infra/jest-config": "workspace:^",
+		"@infra/ts-config-node": "workspace:^",
 		"@jest/globals": "^27.3.1",
 		"eslint": "^8.2.0",
 		"jest": "^27.3.1",
