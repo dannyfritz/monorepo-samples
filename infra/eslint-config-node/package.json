@@ -1,0 +1,9 @@
+{
+	"name": "@infra/eslint-config-node",
+	"private": true,
+	"version": "1.0.0",
+	"dependencies": {
+		"@infra/eslint-config-base": "*",
+		"eslint-plugin-node": "^11.1.0"
+	}
+}

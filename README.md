@@ -1,70 +1,33 @@
-# monorepo-samples
+# Lerna
 
-This repo is created to demonstrate various TypeScript monorepo structures.
+This repo is created to demonstrate a [Lerna](https://lerna.js.org/) monorepo structure.
 
-## Demonstrations
+## Setup
 
-You can see each demonstration on these respective git branches:
-* `lerna`
-* `pnpm`
-* `pnpm + lage`
-* `pnpm + ultra-runner`
-* `rush`
+1. Install Node, npm, and npx. (All are installed with Node)
+2. Install Yarn. (Usually from npm)
+3. `yarn lerna bootstrap --strict` or `yarn bootstrap`
 
-## Requirements
+## Commands
 
-### Dependency Structure
+### All Packages
 
-* web-application <- button
-* web-application <- shared-types
-* web-application <- math-utils
-* web-application <- service-client
-* web-application <- shared-configs
-* service-client <- shared-types
-* service-client <- shared-configs
-* service <- shared-types
-* service <- math-utils
-* service <- shared-configs
-* shared-configs
+`lerna run build`
+`lerna run lint`
+`lerna run static-analysis`
+`lerna run unit-test`
 
-### Package Requirements
+### Run web-application
 
-#### All Packages
+`lerna run build --scope web-application --include-dependencies`
+`lerna run start --scope web-application`
 
-* "test" - run Jest
-* "lint" - run ESLint
-* "static-analysis" - run TypeScript
-* Use a shared Jest profile
+### Deploy web-application
 
-#### web-application
+`lerna run build --scope web-application --include-dependencies`
+`lerna run deploy --scope web-application`
 
-* "build" - Bundle for the browser
-* "build:watch" - Support a development server
-* "deploy" - Run a script that sleeps for 10s
-* ESLint profile: Web
-* TypeScript profile: Web
+## Deploy math-service
 
-#### button
-
-* "build" - Bundle for the browser
-* ESLint profile: Web
-* TypeScript profile: Web
-
-#### math-utils
-
-* "build" - Bundle for Node
-* ESLint profile: Node
-* TypeScript profile: Node
-
-#### service-client
-
-* "build" - Bundle for node
-* ESLint profile: Node
-* TypeScript profile: Node
-
-#### service
-
-* "build" - Support bundling for node
-* "deploy" - Run a script that sleeps for 10s
-* ESLint profile: Node
-* TypeScript profile: Node
+`yarn lerna run build --scope math-service --include-dependencies`
+`lerna run deploy --scope math-service`

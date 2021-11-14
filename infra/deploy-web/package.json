@@ -1,0 +1,26 @@
+{
+	"name": "deploy-web",
+	"private": true,
+	"version": "1.0.0",
+	"source": "src/index.ts",
+	"main": "dist/main.js",
+	"bin": {
+		"deploy-web": "bin/deploy-web.js"
+	},
+	"scripts": {
+		"build": "parcel build",
+		"build:watch": "parcel watch",
+		"lint": "eslint . --color"
+	},
+	"dependencies": {
+		"atomic-sleep": "^1.0.0"
+	},
+	"devDependencies": {
+		"@infra/ts-config-node": "*",
+		"@infra/eslint-config-node": "*",
+		"eslint": "^8.2.0",
+		"jest": "^27.3.1",
+		"parcel": "^2.0.1",
+		"typescript": "^4.4.4"
+	}
+}

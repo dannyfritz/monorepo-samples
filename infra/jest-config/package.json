@@ -1,0 +1,14 @@
+{
+	"name": "@infra/jest-config",
+	"private": true,
+	"version": "1.0.0",
+	"dependencies": {
+		"@infra/babel-preset-base": "*",
+		"@types/jest": "^27.0.2",
+		"babel-jest": "^27.3.1"
+	},
+	"peerDependencies": {
+		"@jest/globals": "^27.3.1",
+		"jest": "^27.3.1"
+	}
+}

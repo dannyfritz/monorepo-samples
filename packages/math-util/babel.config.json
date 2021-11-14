@@ -1,0 +1,3 @@
+{
+	"presets": ["@infra/babel-preset-base"]
+}

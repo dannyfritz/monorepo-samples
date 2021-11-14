@@ -1,0 +1,18 @@
+{
+  "name": "lerna-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "infra/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --strict"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "lerna": "^4.0.0"
+  }
+}

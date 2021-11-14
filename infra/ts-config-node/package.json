@@ -1,0 +1,8 @@
+{
+	"name": "@infra/ts-config-node",
+	"private": true,
+	"version": "1.0.0",
+	"devDependencies": {
+		"@tsconfig/node12": "^1.0.9"
+	}
+}

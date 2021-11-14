@@ -1,0 +1,15 @@
+{
+	"name": "button",
+	"private": true,
+	"version": "1.0.0",
+	"source": "src/index.tsx",
+	"main": "dist/main.js",
+	"types": "dist/types.d.ts",
+	"scripts": {
+		"build": "parcel build",
+		"build:watch": "parcel watch"
+	},
+	"devDependencies": {
+		"parcel": "^2.0.1"
+	}
+}

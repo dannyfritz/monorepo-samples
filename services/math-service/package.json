@@ -1,0 +1,26 @@
+{
+	"name": "math-service",
+	"private": true,
+	"version": "1.0.0",
+	"source": "./src/index.ts",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "parcel build",
+		"build:watch": "parcel watch",
+		"deploy": "deploy-service",
+		"lint": "eslint . --color"
+	},
+	"dependencies": {
+		"math-util": "*"
+	},
+	"devDependencies": {
+		"@infra/ts-config-node": "*",
+		"@infra/jest-config": "*",
+		"@infra/eslint-config-node": "*",
+		"deploy-service": "*",
+		"eslint": "^8.2.0",
+		"parcel": "^2.0.1",
+		"typescript": "^4.4.4"
+	}
+}
