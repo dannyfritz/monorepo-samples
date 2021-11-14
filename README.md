@@ -37,6 +37,6 @@ This repo is created to demonstrate a [Lerna](https://lerna.js.org/) monorepo st
 
 ## Deploy math-service
 
-`yarn lerna run build --scope math-service --include-dependencies`
+`lerna run build --scope math-service --include-dependencies`
 
 `lerna run deploy --scope math-service --stream`
