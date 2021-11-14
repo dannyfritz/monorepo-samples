@@ -34,7 +34,7 @@ You can see each demonstration on these respective git branches:
 
 #### All Packages
 
-* "test" - run Jest
+* "unit-test" - run Jest
 * "lint" - run ESLint
 * "static-analysis" - run TypeScript
 
