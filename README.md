@@ -34,7 +34,7 @@ This repo is created to demonstrate a [pnpm](https://pnpm.io/) monorepo structur
 
 `pnpm run deploy --filter math-web --stream`
 
-## Deploy math-service
+### Deploy math-service
 
 `pnpm run build --filter math-service...`
 
