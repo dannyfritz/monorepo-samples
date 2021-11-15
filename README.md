@@ -25,18 +25,18 @@ This repo is created to demonstrate a [pnpm](https://pnpm.io/) monorepo structur
 
 ### Run math-web
 
-`ultra -r --filter "+apps/math-web" build`
+`ultra -r --filter +math-web build`
 
-`ultra -r --filter "apps/math-web" start`
+`ultra -r --filter math-web start`
 
 ### Deploy math-web
 
-`ultra -r --filter "+apps/math-web" build`
+`ultra -r --filter +math-web build`
 
-`ultra -r --filter "apps/math-web" deploy`
+`ultra -r --filter math-web deploy`
 
 ### Deploy math-service
 
-`ultra -r --filter "+services/math-service" build`
+`ultra -r --filter +math-service build`
 
 `ultra -r --filter math-service deploy`
