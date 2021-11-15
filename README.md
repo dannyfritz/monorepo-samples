@@ -13,30 +13,24 @@ This repo is created to demonstrate a [pnpm](https://pnpm.io/) monorepo structur
 
 ### All Packages
 
-`pnpm run lage build`
+`lage build`
 
-`pnpm run lage clean`
+`lage clean`
 
-`pnpm run lage lint`
+`lage lint`
 
-`pnpm run lage static-check`
+`lage static-check`
 
-`pnpm run lage unit-test`
+`lage unit-test`
 
 ### Run math-web
 
-`pnpm run lage build --scope math-web` (did not work)
-
-`pnpm run start --filter math-web --stream`
+`lage start --scope math-web --no-deps --verbose`
 
 ### Deploy math-web
 
-`pnpm run lage build --scope math-web` (did not work)
-
-`pnpm run deploy --filter math-web --stream`
+`lage deploy --scope math-web --no-deps --verbose`
 
 ### Deploy math-service
 
-`pnpm run lage build --scope math-service` (did not work, runs on everything)
-
-`pnpm run deploy --filter math-service --stream`
+`lage deploy --scope math-service --no-deps --verbose`
